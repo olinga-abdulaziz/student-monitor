@@ -2,12 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import MainLogin from './Screens/AuthScreens/MainLogin'
 import StudentLogin from './Screens/AuthScreens/StudentLogin';
 import TeacherLogin from './Screens/AuthScreens/TeacherLogin'
 import ParentLogin from './Screens/AuthScreens/ParentLogin'
 import StudentDashboard from './Screens/StudentDahsboard';
-
+import Result from './Components/Result';
+import TeacherDashboard from './Screens/TeacherDashboard';
+import ClassRegister from './Components/ClassRegister'
+import ParentDashboard from './Screens/ParentDashboard';
+import ParenetStudents from './Screens/ParentStudents';
+import MainScreen from './Screens/MainScreen'
+import SplashScreen from './Screens/AuthScreens/SplashScreen';
 
 export default function App() {
   const Stack=createNativeStackNavigator()
@@ -18,11 +23,17 @@ export default function App() {
           headerShown:false
         }}
       >
-        <Stack.Screen name="mainLogin" component={MainLogin} />
+        <Stack.Screen name="splashScreen" component={SplashScreen} />
+        <Stack.Screen name="mainScreen" component={MainScreen} />
         <Stack.Screen name="studentLogin" component={StudentLogin} />
         <Stack.Screen name="teacherLogin" component={TeacherLogin} />
         <Stack.Screen name="parentLogin" component={ParentLogin} />
         <Stack.Screen name="studentDashboard" component={StudentDashboard} />
+        <Stack.Screen name="teacherDashboard" component={TeacherDashboard} />
+        <Stack.Screen name="result" component={Result} />
+        <Stack.Screen name="classsRegister" component={ClassRegister} />
+        <Stack.Screen  name="parenttudents" component={ParenetStudents} />
+        <Stack.Screen  name="parentDashboard" component={ParentDashboard} />
       </Stack.Navigator>
     </NavigationContainer>
 

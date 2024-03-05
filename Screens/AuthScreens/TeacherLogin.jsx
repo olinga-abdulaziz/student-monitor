@@ -1,6 +1,9 @@
 import { View,Text, StyleSheet,Button, TextInput } from "react-native"
+import { useNavigation } from "@react-navigation/native";
+
 
 export default function TeacherLogin() {
+    const navigation=useNavigation()
 
     return(
         <View style={styles.container}>
@@ -17,7 +20,9 @@ export default function TeacherLogin() {
                      <TextInput secureTextEntry={true} style={styles.txtINput} placeholder="Password" />
                  </View>
                  <View style={styles.formView}>
-                     <Button title="Login" />
+                     <Button title="Login" 
+                     onPress={()=>navigation.navigate('teacherDashboard')}
+                     />
                  </View>
              </View>
         </View>

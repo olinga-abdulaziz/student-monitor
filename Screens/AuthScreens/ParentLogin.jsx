@@ -1,6 +1,8 @@
+import { useNavigation } from "@react-navigation/native"
 import { View,Text, StyleSheet,Button, TextInput } from "react-native"
 
 export default function ParentLogin() {
+const navigation=useNavigation()
 
     return(
         <View style={styles.container}>
@@ -17,7 +19,9 @@ export default function ParentLogin() {
                      <TextInput secureTextEntry={true} style={styles.txtINput} placeholder="Password" />
                  </View>
                  <View style={styles.formView}>
-                     <Button title="Login" />
+                     <Button title="Login" 
+                     onPress={()=>navigation.navigate('parenttudents')}
+                     />
                  </View>
              </View>
         </View>

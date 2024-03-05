@@ -1,6 +1,6 @@
 import { View,Text, StyleSheet,Button } from "react-native"
 
-export default function MainLogin({navigation}) {
+export default function MainScreen({navigation}) {
     return(
         <View style={styles.container}>
             <View style={styles.bodyBox}>
