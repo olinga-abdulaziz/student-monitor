@@ -24,6 +24,10 @@ export default function TeacherLogin() {
                      onPress={()=>navigation.navigate('teacherDashboard')}
                      />
                  </View>
+                 <View style={styles.formView}>
+                        <Button title="Sign up" color={"green"}
+                        onPress={()=>navigation.navigate('studentSignup')} />
+                    </View>
              </View>
         </View>
 
@@ -58,7 +62,8 @@ const styles=StyleSheet.create({
         marginLeft:'auto',
         marginRight:'auto',
         marginTop:'5rem',
-        paddingTop:30
+        paddingTop:30,
+        borderRadius:17
     },
     formView:{
         marginBottom:20,
@@ -69,6 +74,10 @@ const styles=StyleSheet.create({
         borderRadius: 3,
         padding:5,
         paddingLeft:10
+    },
+    bodyBox:{
+        backgroundColor:"#8CC7F2",
+        height:'100%',
+        justifyContent:'center'
     }
-    
 })

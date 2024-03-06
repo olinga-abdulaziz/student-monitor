@@ -64,6 +64,11 @@ export default function ParentHome() {
                         onPress={()=>navigation.navigate('result')}
                         />
                     </View>
+                    <View style={{marginTop:20}}>
+                        <Button title="Pay fees online" color={"green"} 
+                        onPress={()=>navigation.navigate('result')}
+                        />
+                    </View>
                 </View>
             </View>
         </View>

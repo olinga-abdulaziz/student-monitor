@@ -29,7 +29,7 @@ export default function ParentDashboard() {
                 tabBarIcon:({color})=>(
                     <MaterialCommunityIcons name="map" color={color} size={26} />
                 ),
-                title:"My student current location"
+                title:"Location"
             }}
             
             />

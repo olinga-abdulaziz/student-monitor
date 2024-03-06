@@ -13,6 +13,9 @@ import ParentDashboard from './Screens/ParentDashboard';
 import ParenetStudents from './Screens/ParentStudents';
 import MainScreen from './Screens/MainScreen'
 import SplashScreen from './Screens/AuthScreens/SplashScreen';
+import StudentSignup from './Screens/AuthScreens/StudentSignup'
+import TeacherSignup from './Screens/AuthScreens/TeavherSignup'
+import ParentSignup from './Screens/AuthScreens/ParentSignup'
 
 export default function App() {
   const Stack=createNativeStackNavigator()
@@ -34,6 +37,9 @@ export default function App() {
         <Stack.Screen name="classsRegister" component={ClassRegister} />
         <Stack.Screen  name="parenttudents" component={ParenetStudents} />
         <Stack.Screen  name="parentDashboard" component={ParentDashboard} />
+        <Stack.Screen  name="studentSignup" component={StudentSignup} />
+        <Stack.Screen  name="teacherSignup" component={TeacherSignup} />
+        <Stack.Screen  name="parentSignup" component={ParentSignup} />
       </Stack.Navigator>
     </NavigationContainer>
 
